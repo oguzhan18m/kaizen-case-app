@@ -1,21 +1,16 @@
-import { SafeAreaView, StatusBar } from 'react-native';
+import { SafeAreaView, StatusBar } from "react-native";
 
-import { useTheme } from '@/theme';
+import { useTheme } from "@/theme";
 
-import type { PropsWithChildren } from 'react';
+import type { PropsWithChildren } from "react";
 
 function SafeScreen({ children }: PropsWithChildren) {
 	const { layout, variant, navigationTheme } = useTheme();
 
 	return (
-		<SafeAreaView
-			style={[
-				layout.flex_1,
-				{ backgroundColor: navigationTheme.colors.background },
-			]}
-		>
+		<SafeAreaView style={[layout.flex_1, { backgroundColor: "white" }]}>
 			<StatusBar
-				barStyle={variant === 'dark' ? 'light-content' : 'dark-content'}
+				barStyle={variant === "dark" ? "light-content" : "dark-content"}
 			/>
 			{children}
 		</SafeAreaView>

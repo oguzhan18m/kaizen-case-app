@@ -1,2 +1,4 @@
-export { default as Startup } from './Startup/Startup';
-export { default as Example } from './Example/Example';
+export { default as Discover } from "./Discover/Discover";
+export { default as Campaign } from "./Campaign/Campaign";
+export { default as Portal } from "./Portal/Portal";
+export { default as Wallet } from "./Wallet/Wallet";
